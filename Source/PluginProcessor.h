@@ -9,6 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "FIR.h"
 
 //==============================================================================
 /**
@@ -64,4 +65,6 @@ private:
     double gain;
     double muted = 1.0;
     bool toggleLPF = false;
+
+    FIR filters[2] = { FIR(), FIR() };
 };

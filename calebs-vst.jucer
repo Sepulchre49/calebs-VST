@@ -5,6 +5,8 @@
               companyName="Caleb's Plugins">
   <MAINGROUP id="c0wIRZ" name="calebs-vst">
     <GROUP id="{F362C2AF-88DD-19D8-BA9A-6FACC5F552A7}" name="Source">
+      <FILE id="cpxWrC" name="FIR.cpp" compile="1" resource="0" file="Source/FIR.cpp"/>
+      <FILE id="hUEwEI" name="FIR.h" compile="0" resource="0" file="Source/FIR.h"/>
       <FILE id="cSMzAS" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="jxkhY1" name="PluginProcessor.h" compile="0" resource="0"

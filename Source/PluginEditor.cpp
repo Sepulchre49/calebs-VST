@@ -56,7 +56,7 @@ void CalebsvstAudioProcessorEditor::paint (juce::Graphics& g)
 
     g.setColour (juce::Colours::white);
     g.setFont (15.0f);
-    g.drawFittedText ("Caleb's VST", 0, 0, getWidth(), 30, juce::Justification::centred, 1);
+    g.drawFittedText ("Caleb's VSTf", 0, 0, getWidth(), 30, juce::Justification::centred, 1);
 }
 
 void CalebsvstAudioProcessorEditor::resized()
