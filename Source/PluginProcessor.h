@@ -66,5 +66,5 @@ private:
     double muted = 1.0;
     bool toggleLPF = false;
 
-    FIR filters[2] = { FIR(), FIR() };
+    FirstOrderFeedforwardFilter filters[2] = { FirstOrderFeedforwardFilter(0.1,0.1), FirstOrderFeedforwardFilter(0.1,0.1) };
 };
