@@ -65,6 +65,7 @@ private:
     double gain;
     double muted = 1.0;
     bool toggleLPF = false;
+    bool toggleBiquad = false;
 
     FirstOrderFeedforwardFilter filters[2] = { FirstOrderFeedforwardFilter(0.1,0.1), FirstOrderFeedforwardFilter(0.1,0.1) };
 };

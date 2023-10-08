@@ -42,6 +42,13 @@ CalebsvstAudioProcessorEditor::CalebsvstAudioProcessorEditor (CalebsvstAudioProc
     };
 
     addAndMakeVisible(&toggleLPFButton);
+
+    toggleBiquadButton.setButtonText("Biquad");
+    toggleBiquadButton.onClick = [this] {
+        audioProcessor.toggleBiquad = toggleBiquadButton.getToggleState();
+    };
+
+    addAndMakeVisible(&toggleBiquadButton);
 }
 
 CalebsvstAudioProcessorEditor::~CalebsvstAudioProcessorEditor()
@@ -66,4 +73,5 @@ void CalebsvstAudioProcessorEditor::resized()
     gainSlider.setBounds(40, 30, 50, getHeight() - 60);
     muteButton.setBounds(160, 30, 100, getHeight() - 50);
     toggleLPFButton.setBounds(160, 50, 100, getHeight() - 50);
+    toggleBiquadButton.setBounds(160, 70, 100, getHeight() - 50);
 }
