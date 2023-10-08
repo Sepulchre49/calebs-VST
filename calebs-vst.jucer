@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="CWTzna" name="calebs-vst" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              companyName="Caleb's Plugins">
   <MAINGROUP id="c0wIRZ" name="calebs-vst">
     <GROUP id="{F362C2AF-88DD-19D8-BA9A-6FACC5F552A7}" name="Source">
       <FILE id="cSMzAS" name="PluginProcessor.cpp" compile="1" resource="0"
