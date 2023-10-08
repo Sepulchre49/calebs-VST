@@ -158,6 +158,8 @@ void CalebsvstAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, ju
             float z = buffer.getSample(channel, sample);
             if (toggleLPF)
                 z = filters[channel].process_sample(z);
+            if (toggleBiquad)
+                z = biquads[channel].processSample(z);
             channelData[sample] = muted * gain * z;
         }
     }

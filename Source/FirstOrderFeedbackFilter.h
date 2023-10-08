@@ -14,7 +14,7 @@ public:
     FirstOrderFeedforwardFilter();
     FirstOrderFeedforwardFilter(float coeffs);
     FirstOrderFeedforwardFilter(float a1, float a2);
-    float process_sample(float z);
+    float processSample(float z);
 private:
     float prevSample;
     float a1, a2;
