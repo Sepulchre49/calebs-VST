@@ -9,7 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include "FIR.h"
+#include "FirstOrderFeedbackFilter.h"
 
 //==============================================================================
 /**
