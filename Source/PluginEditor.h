@@ -32,7 +32,7 @@ private:
     juce::Slider gainSlider;
     juce::ToggleButton muteButton;
     juce::ToggleButton toggleLPFButton;
-    juce::ToggleButton toggleBiquad;
+    juce::ToggleButton toggleBiquadButton;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (CalebsvstAudioProcessorEditor)
 };
