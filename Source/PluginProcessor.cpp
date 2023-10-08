@@ -153,8 +153,11 @@ void CalebsvstAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, ju
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
-
         // ..do something to the data...
+        for (auto sample = 0; sample < buffer.getNumSamples(); ++sample) {
+            float z = buffer.getSample(channel, sample);
+            channelData[sample] = muted * gain * z;
+        }
     }
 }
 

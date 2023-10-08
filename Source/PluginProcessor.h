@@ -56,7 +56,12 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
+    friend class CalebsvstAudioProcessorEditor;
 private:
     //==============================================================================
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (CalebsvstAudioProcessor)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(CalebsvstAudioProcessor);
+
+    double gain;
+    double muted = 1.0;
+    bool toggleLPF = false;
 };

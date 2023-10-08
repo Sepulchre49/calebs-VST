@@ -28,6 +28,10 @@ private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
     CalebsvstAudioProcessor& audioProcessor;
+    
+    juce::Slider gainSlider;
+    juce::ToggleButton muteButton;
+    juce::ToggleButton toggleLPFButton;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (CalebsvstAudioProcessorEditor)
 };
