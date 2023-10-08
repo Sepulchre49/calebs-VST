@@ -8,7 +8,7 @@
   ==============================================================================
 */
 
-#include "FIR.h"
+#include "FirstOrderFeedbackFilter.h"
 FirstOrderFeedforwardFilter::FirstOrderFeedforwardFilter() : a1{ 0.5 }, a2{ 0.5 } {
 
 };
