@@ -69,5 +69,5 @@ private:
     bool toggleBiquad = false;
 
     FirstOrderFeedforwardFilter filters[2] = { FirstOrderFeedforwardFilter(0.1,0.1), FirstOrderFeedforwardFilter(0.1,0.1) };
-    Biquad biquads[2] = { Biquad(), Biquad() };
+    Biquad biquads[2] = { Biquad(1.0, 0.73, 1.0, -0.78, 0.88), Biquad(1.0, 0.73, 1.0, -0.78, 0.88) };
 };
