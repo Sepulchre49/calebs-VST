@@ -1,7 +1,7 @@
 # calebs-vst
 This is a JUCE plugin written to test implementations of various digital signal filters written while reading Will Pirkle's book "Designing Audio Plugins in C++". The plugin can be compiled as a standalone, or as a VST3, AU, and AAX and run in an appropriate DAW.
 
-All filters have been implemented from scratch by me
+All filters have been implemented from scratch by me, Caleb Fringer
 
 # Building
 -Install the JUCE framework from https://juce.com/download/
