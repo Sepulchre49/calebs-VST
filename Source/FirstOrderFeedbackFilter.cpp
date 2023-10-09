@@ -21,7 +21,7 @@ FirstOrderFeedforwardFilter::FirstOrderFeedforwardFilter(float a1, float a2) : a
 
 };
 
-float FirstOrderFeedforwardFilter::process_sample(float z) {
+float FirstOrderFeedforwardFilter::processSample(float z) {
     float out = a1 * z + a2 * prevSample;
     prevSample = z;
     return out;
