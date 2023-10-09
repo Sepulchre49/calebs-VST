@@ -10,6 +10,7 @@
 
 #include <JuceHeader.h>
 #include "FirstOrderFeedbackFilter.h"
+#include "Biquad.h"
 
 //==============================================================================
 /**
@@ -68,4 +69,5 @@ private:
     bool toggleBiquad = false;
 
     FirstOrderFeedforwardFilter filters[2] = { FirstOrderFeedforwardFilter(0.1,0.1), FirstOrderFeedforwardFilter(0.1,0.1) };
+    Biquad biquads[2] = { Biquad(), Biquad() };
 };
