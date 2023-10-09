@@ -26,5 +26,5 @@ float Biquad::processSample(float z)
     double y = a0 * z + delay[0];
     delay[0] = a1 * z - b1 * y + delay[1];
     delay[1] = a2 * z - b2 * y;
-    return (float)z;
+    return (float)y;
 }
